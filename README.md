@@ -23,9 +23,12 @@ A set of convenience utils for Python requiring no external libs. Some of the be
     In [3]: slack_debug('This is seriously awesome!')
     Out[3]: <Response [200]>
 
-    In [4]: slack_debug_json({'A':1,'B':2,'C':3,'X':['foo','bar','baz'],'Z':{'nested_key':'nested_val
+    In [4]: slack_debug('Yeah, no kidding.')
+    Out[4]: <Response [200]>
+
+    In [5]: slack_debug_json({'A':1,'B':2,'C':3,'X':['foo','bar','baz'],'Z':{'nested_key':'nested_val
        ...: ue'}}),
-    Out[4]: (None,)
+    Out[5]: (None,)
     ```
 1. Check your Slack to verify that the message was posted. If not, perhaps your token was wrong, or the Slack integration was disabled.
     ![image](https://user-images.githubusercontent.com/422501/61012949-7d29db00-a335-11e9-941f-6c0d851179e9.png)
