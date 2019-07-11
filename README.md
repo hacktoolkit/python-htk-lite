@@ -31,7 +31,8 @@ A set of convenience utils for Python requiring no external libs. Some of the be
     Out[5]: (None,)
     ```
 1. Check your Slack to verify that the message was posted. If not, perhaps your token was wrong, or the Slack integration was disabled.
-    ![image](https://user-images.githubusercontent.com/422501/61012949-7d29db00-a335-11e9-941f-6c0d851179e9.png)
+    ![image](https://user-images.githubusercontent.com/422501/61013225-ad25ae00-a336-11e9-8f90-0a41c48fa7c7.png)
+    (Alternative link to screenshot above: https://cl.ly/436cfb4383a2)
 1. Profit!
 
 # Authors and Maintainers
