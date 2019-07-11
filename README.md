@@ -14,12 +14,18 @@ A set of convenience utils for Python requiring no external libs. Some of the be
     SSH: `git clone git@github.com:hacktoolkit/pyhtk-lite.git htk`  
     HTTPS: `git clone https://github.com/hacktoolkit/pyhtk-lite.git`
 1. Create `local_settings.py` and add your [Slack incoming webhook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) URL to `SLACK_WEBHOOK_URL`.
-1. In your code do:
+1. Example usage in Python Shell
     ```
-    from htk import slack_debug
-    from htk import slack_debug_json
+    In [1]: from htk import slack_debug
 
-    slack_debug('This is a test!')
+    In [2]: from htk import slack_debug_json
+
+    In [3]: slack_debug('This is seriously awesome!')
+    Out[3]: <Response [200]>
+
+    In [4]: slack_debug_json({'A':1,'B':2,'C':3,'X':['foo','bar','baz'],'Z':{'nested_key':'nested_val
+       ...: ue'}}),
+    Out[4]: (None,)
     ```
 1. Check your Slack to verify that the message was posted. If not, perhaps your token was wrong, or the Slack integration was disabled.
 1. Profit!
