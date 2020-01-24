@@ -1,24 +1,18 @@
+# Future Imports
 from __future__ import absolute_import
 
 # Python Standard Library Imports
 import json
 
-# Third Party / PIP Imports
-import requests
-
-# HTKLite Imports
+# Local Imports
 from ..encoders import DecimalEncoder
-from ..settings import SLACK_WEBHOOK_URL
 
 
 def slack_debug(text):
-    payload = {
-        'text' : text,
-    }
-    response = requests.post(
-        SLACK_WEBHOOK_URL,
-        json=payload
-    )
+    from .slack import slack_message
+
+    response = slack_message(text=text)
+
     return response
 
 
