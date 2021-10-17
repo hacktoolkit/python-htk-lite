@@ -10,9 +10,11 @@ A set of convenience utils for Python requiring no external libs. Some of the be
 
 # How To Use This Awesome?
 
-1. Clone this repository into a directory named `htk` (preferred) or `htk_lite`  
-    SSH: `git clone git@github.com:hacktoolkit/pyhtk-lite.git htk`  
-    HTTPS: `git clone https://github.com/hacktoolkit/pyhtk-lite.git`
+1. Install via PIP:
+    `pip install htk-lite`
+1. (**Alternative install via clone**) Installe via local clone: clone this repository into a directory named `htk` (preferred) or `htk_lite`  
+    SSH: `git clone git@github.com:hacktoolkit/python-htk-lite.git htk`  
+    HTTPS: `git clone https://github.com/hacktoolkit/python-htk-lite.git`
 1. Create `local_settings.py` and add your [Slack incoming webhook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) URL to `SLACK_WEBHOOK_URL`.
 1. Example usage in Python Shell
     ```
