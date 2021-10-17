@@ -1,3 +1,6 @@
+[![](https://img.shields.io/pypi/pyversions/htk-lite.svg?longCache=True)](https://pypi.org/project/htk-lite/)
+[![](https://img.shields.io/pypi/v/htk-lite.svg?maxAge=3600)](https://pypi.org/project/htk-lite/)
+
 # HTK Lite for Python
 
 A set of convenience utils for Python requiring no external libs. Some of the best tricks from [`django-htk`](https://github.com/hacktoolkit/django-htk), without the bloat and Django dependency.
