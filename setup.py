@@ -41,7 +41,7 @@ setup(
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/hacktoolkit/pyhtk-lite',
+    url='https://github.com/hacktoolkit/python-htk-lite',
 
     # Author details
     author='Hacktoolkit',
