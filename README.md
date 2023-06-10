@@ -13,12 +13,22 @@ A set of convenience utils for Python requiring no external libs. Some of the be
 
 # How To Use This Awesome?
 
+## Installation
+
 1. Install via PIP:
     `pip install htk-lite`
 1. (**Alternative install via clone**) Installe via local clone: clone this repository into a directory named `htk` (preferred) or `htk_lite`  
     SSH: `git clone git@github.com:hacktoolkit/python-htk-lite.git htk`  
     HTTPS: `git clone https://github.com/hacktoolkit/python-htk-lite.git`
 1. Create `local_settings.py` and add your [Slack incoming webhook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) URL to `SLACK_WEBHOOK_URL`.
+
+### Tips on Location of HTK Module 
+
+1. You can place it outside of your app directory tree, and then symlink it inside.
+1. To not be nagged by the presence of the `htk` directory whenever you do `git status`, add `htk` to your `.git/info/exclude` file (like `.gitignore`, but only in your local repository, not checked in).
+
+## Slack Debug
+
 1. Example usage in Python Shell
     ```
     In [1]: from htk import slack_debug
@@ -40,10 +50,12 @@ A set of convenience utils for Python requiring no external libs. Some of the be
     (Alternative link to screenshot above: https://cl.ly/436cfb4383a2)
 1. Profit!
 
-## Tips on Location of HTK Module 
+## FDebug (FDB)
 
-1. You can place it outside of your app directory tree, and then symlink it inside.
-1. To not be nagged by the presence of the `htk` directory whenever you do `git status`, add `htk` to your `.git/info/exclude` file (like `.gitignore`, but only in your local repository, not checked in).
+1. (**Recommended**) Create a BASH alias or similar: `alias fdb='touch /tmp/fdebug.log; tail -f /tmp/fdebug.log'`
+    1. In a separate window used for debugging, run `fdb` to watch the logs roll in.
+1. `from htk import fdb`
+1. `fdb('Not all heroes wear capes')`
 
 # See Also
 
